@@ -20,8 +20,11 @@ public class ArithmeticBase
         {
         Scanner sc =new Scanner(System.in);
         System.out.println("enter String");
-        String s= sc.next();
-        switch (s.toUpperCase()) 
+        public enum arith{PLUS, MINUS, TIMES, DIVDE};
+        
+        public final arith s;
+        
+        switch (s) 
         {
             case "PLUS":
                 return x + y;
